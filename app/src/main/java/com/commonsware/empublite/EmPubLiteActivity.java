@@ -8,6 +8,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+import de.greenrobot.event.EventBus;
+
 public class EmPubLiteActivity extends Activity {
     private ViewPager pager=null;
     private ContentsAdapter adapter=null;
@@ -48,5 +50,16 @@ public class EmPubLiteActivity extends Activity {
                 return(true);
         }
         return(super.onOptionsItemSelected(item));
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        EventBus.getDefault().register(this);
+    }
+    @Override
+    public void onPause() {
+        EventBus.getDefault().unregister(this);
+        super.onPause();
     }
 }
