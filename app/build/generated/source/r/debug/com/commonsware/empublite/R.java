@@ -16,8 +16,9 @@ public final class R {
         public static final int ic_launcher=0x7f020002;
     }
     public static final class id {
-        public static final int about=0x7f070002;
-        public static final int help=0x7f070001;
+        public static final int about=0x7f070003;
+        public static final int help=0x7f070002;
+        public static final int pager=0x7f070001;
         public static final int progressBar1=0x7f070000;
     }
     public static final class layout {
