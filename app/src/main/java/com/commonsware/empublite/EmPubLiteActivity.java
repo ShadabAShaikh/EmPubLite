@@ -57,6 +57,9 @@ public class EmPubLiteActivity extends Activity {
                         "file:///android_asset/misc/help.html");
                 startActivity(i);
                 return(true);
+            case R.id.settings:
+                startActivity(new Intent(this, Preferences.class));
+                return(true);
         }
         return(super.onOptionsItemSelected(item));
     }
