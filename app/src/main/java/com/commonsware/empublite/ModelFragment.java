@@ -24,6 +24,7 @@ public class ModelFragment extends Fragment {
     public SharedPreferences getPrefs() {
         return(prefs);
     }
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

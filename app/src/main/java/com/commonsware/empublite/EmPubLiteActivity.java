@@ -21,6 +21,7 @@ public class EmPubLiteActivity extends Activity {
     private static final String PREF_SAVE_LAST_POSITION="saveLastPosition";
     private static final String PREF_KEEP_SCREEN_ON="keepScreenOn";
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,37 +37,6 @@ public class EmPubLiteActivity extends Activity {
             setupPager(mfrag.getBook());
         }
         getActionBar().setHomeButtonEnabled(true);
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.options, menu);
-        return(super.onCreateOptionsMenu(menu));
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case android.R.id.home:
-                pager.setCurrentItem(0, false);
-                return(true);
-            case R.id.about:
-                Intent i=new Intent(this, SimpleContentActivity.class);
-                i.putExtra(SimpleContentActivity.EXTRA_FILE,
-                        "file:///android_asset/misc/about.html");
-                startActivity(i);
-                return(true);
-            case R.id.help:
-                i=new Intent(this, SimpleContentActivity.class);
-                i.putExtra(SimpleContentActivity.EXTRA_FILE,
-                        "file:///android_asset/misc/help.html");
-                startActivity(i);
-                return(true);
-            case R.id.settings:
-                startActivity(new Intent(this, Preferences.class));
-                return(true);
-        }
-        return(super.onOptionsItemSelected(item));
     }
 
     @Override
@@ -101,6 +71,39 @@ public class EmPubLiteActivity extends Activity {
         }
         super.onPause();
     }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.options, menu);
+        return(super.onCreateOptionsMenu(menu));
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                pager.setCurrentItem(0, false);
+                return(true);
+            case R.id.about:
+                Intent i=new Intent(this, SimpleContentActivity.class);
+                i.putExtra(SimpleContentActivity.EXTRA_FILE,
+                        "file:///android_asset/misc/about.html");
+                startActivity(i);
+                return(true);
+            case R.id.help:
+                i=new Intent(this, SimpleContentActivity.class);
+                i.putExtra(SimpleContentActivity.EXTRA_FILE,
+                        "file:///android_asset/misc/help.html");
+                startActivity(i);
+                return(true);
+            case R.id.settings:
+                startActivity(new Intent(this, Preferences.class));
+                return(true);
+        }
+        return(super.onOptionsItemSelected(item));
+    }
+
+
 
     private void setupPager(BookContents contents) {
         adapter=new ContentsAdapter(this, contents);
