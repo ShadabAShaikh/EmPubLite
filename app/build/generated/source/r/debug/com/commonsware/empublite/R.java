@@ -15,8 +15,9 @@ public final class R {
         public static final int ic_action_discard=0x7f020001;
         public static final int ic_action_edit=0x7f020002;
         public static final int ic_action_help=0x7f020003;
-        public static final int ic_action_settings=0x7f020004;
-        public static final int ic_launcher=0x7f020005;
+        public static final int ic_action_refresh=0x7f020004;
+        public static final int ic_action_settings=0x7f020005;
+        public static final int ic_launcher=0x7f020006;
     }
     public static final class id {
         public static final int about=0x7f080008;
@@ -28,6 +29,7 @@ public final class R {
         public static final int progressBar1=0x7f080001;
         public static final int settings=0x7f080006;
         public static final int share=0x7f080003;
+        public static final int update=0x7f080009;
     }
     public static final class layout {
         public static final int editor=0x7f030000;
@@ -41,17 +43,18 @@ public final class R {
         public static final int about=0x7f050000;
         public static final int app_name=0x7f050001;
         public static final int delete=0x7f050002;
-        public static final int help=0x7f050003;
-        public static final int hint=0x7f050004;
-        public static final int keepscreenon_summary=0x7f050005;
-        public static final int keepscreenon_title=0x7f050006;
-        public static final int lastpositionsummary=0x7f050007;
-        public static final int lastpositiontitle=0x7f050008;
-        public static final int notes=0x7f050009;
-        public static final int prefdesc=0x7f05000a;
-        public static final int preftitle=0x7f05000b;
-        public static final int settings=0x7f05000c;
-        public static final int share=0x7f05000d;
+        public static final int download_update=0x7f050003;
+        public static final int help=0x7f050004;
+        public static final int hint=0x7f050005;
+        public static final int keepscreenon_summary=0x7f050006;
+        public static final int keepscreenon_title=0x7f050007;
+        public static final int lastpositionsummary=0x7f050008;
+        public static final int lastpositiontitle=0x7f050009;
+        public static final int notes=0x7f05000a;
+        public static final int prefdesc=0x7f05000b;
+        public static final int preftitle=0x7f05000c;
+        public static final int settings=0x7f05000d;
+        public static final int share=0x7f05000e;
     }
     public static final class style {
         /**  Customize your theme here. 

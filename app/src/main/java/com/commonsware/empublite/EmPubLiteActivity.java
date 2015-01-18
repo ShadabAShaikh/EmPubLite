@@ -10,6 +10,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.commonsware.cwac.wakeful.WakefulIntentService;
+
 import de.greenrobot.event.EventBus;
 
 public class EmPubLiteActivity extends Activity {
@@ -37,6 +39,7 @@ public class EmPubLiteActivity extends Activity {
             setupPager(mfrag.getBook());
         }
         getActionBar().setHomeButtonEnabled(true);
+        UpdateReceiver.scheduleAlarm(this);
     }
 
     @Override
@@ -105,7 +108,7 @@ public class EmPubLiteActivity extends Activity {
                 startActivity(new Intent(this, Preferences.class));
                 return(true);
             case R.id.update:
-                startService(new Intent(this, DownloadCheckService.class));
+                WakefulIntentService.sendWakefulWork(this, DownloadCheckService.class);
                 return(true);
 
         }

@@ -1,6 +1,5 @@
 package com.commonsware.empublite;
 
-import android.app.IntentService;
 import android.content.Intent;
 import android.util.Log;
 
@@ -20,7 +19,7 @@ import java.util.zip.ZipInputStream;
 import de.greenrobot.event.EventBus;
 import retrofit.RestAdapter;
 
-public class DownloadCheckService extends IntentService {
+public class DownloadCheckService extends com.commonsware.cwac.wakeful.WakefulIntentService {
     private static final String UPDATE_FILENAME="book.zip";
     private static final String OUR_BOOK_DATE="20120418";
     public static final String UPDATE_BASEDIR="updates";
@@ -28,7 +27,7 @@ public class DownloadCheckService extends IntentService {
         super("DownloadCheckService");
     }
     @Override
-    protected void onHandleIntent(Intent intent) {
+    protected void doWakefulWork(Intent intent) {
         try {
             String url=getUpdateUrl();
             if (url != null) {
