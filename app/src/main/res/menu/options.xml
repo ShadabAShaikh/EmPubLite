@@ -22,4 +22,10 @@
         android:icon="@drawable/ic_action_about"
         android:title="@string/about">
     </item>
+    <item
+        android:id="@+id/update"
+        android:icon="@drawable/ic_action_refresh"
+        android:showAsAction="ifRoom|withText"
+        android:title="@string/download_update">
+    </item>
 </menu>
