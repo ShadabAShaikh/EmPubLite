@@ -11,4 +11,8 @@
     <string name="keepscreenon_summary">Keep the screen powered on while the reader is in the foreground</string>
     <string name="keepscreenon_title">Keep Screen On</string>
     <string name="settings">Settings</string>
+    <string name="hint">Enter</string>
+    <string name="notes">Notes</string>
+    <string name="delete">Delete</string>
+    <string name="share">Share</string>
 </resources>

@@ -20,6 +20,7 @@
             android:name=".SimpleContentActivity">
         </activity>
         <activity android:name="Preferences"></activity>
+        <activity android:name="NoteActivity"></activity>
     </application>
 
 </manifest>
