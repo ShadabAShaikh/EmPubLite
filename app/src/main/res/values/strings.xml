@@ -16,4 +16,6 @@
     <string name="delete">Delete</string>
     <string name="share">Share</string>
     <string name="download_update">Download Update</string>
+    <string name="update_desc">Click here to open the updated book!</string>
+    <string name="update_complete">EmPub Lite Updated!</string>
 </resources>
