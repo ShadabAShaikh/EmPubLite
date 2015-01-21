@@ -25,7 +25,7 @@ import de.greenrobot.event.NoSubscriberEvent;
 import retrofit.RestAdapter;
 
 public class DownloadCheckService extends com.commonsware.cwac.wakeful.WakefulIntentService {
-    private static final String UPDATE_FILENAME="book.zip";
+    private static final int NOTIFY_ID=1337;
     private static final String OUR_BOOK_DATE="20120418";
     public static final String UPDATE_BASEDIR="updates";
     private static final String UPDATE_FILENAME="book.zip";
@@ -62,8 +62,7 @@ public class DownloadCheckService extends com.commonsware.cwac.wakeful.WakefulIn
                 .setContentText(getString(R.string.update_desc))
                 .setSmallIcon(android.R.drawable.stat_sys_download_done)
                 .setTicker(getString(R.string.update_complete));
-        NotificationManager mgr=
-                ((NotificationManager)getSystemService(Context.NOTIFICATION_SERVICE));
+        NotificationManager mgr=((NotificationManager)getSystemService(Context.NOTIFICATION_SERVICE));
         mgr.notify(NOTIFY_ID, builder.build());
     }
 
