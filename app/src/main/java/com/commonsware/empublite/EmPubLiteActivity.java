@@ -11,7 +11,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.LinearLayout;
-
 import com.commonsware.cwac.wakeful.WakefulIntentService;
 
 import de.greenrobot.event.EventBus;

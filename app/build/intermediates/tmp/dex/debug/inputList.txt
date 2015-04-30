@@ -1,0 +1,10 @@
+C:\Users\Shadab\AndroidStudioProjects\EmPubLite\app\build\intermediates\classes\debug
+C:\Users\Shadab\AndroidStudioProjects\EmPubLite\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-cfaf4e078d5abec38d582b59009e0fbc36e38334.jar
+C:\Users\Shadab\AndroidStudioProjects\EmPubLite\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-144fc33c013f4c98c3d10bdebb615ca38e170a9e.jar
+C:\Users\Shadab\AndroidStudioProjects\EmPubLite\app\build\intermediates\pre-dexed\debug\classes-7364f648404d290c5c2260b40799a743cb825e24.jar
+C:\Users\Shadab\AndroidStudioProjects\EmPubLite\app\build\intermediates\pre-dexed\debug\classes-8ed2273a4fee2f51154b2078b36a19e826bee96a.jar
+C:\Users\Shadab\AndroidStudioProjects\EmPubLite\app\build\intermediates\pre-dexed\debug\eventbus-2.4.0-e9bb3be8179b11e18047ee38ba4b8011fc2981f2.jar
+C:\Users\Shadab\AndroidStudioProjects\EmPubLite\app\build\intermediates\pre-dexed\debug\retrofit-1.8.0-4f65101aa5b6ffb06f5f58cb51712e8a696b9f5d.jar
+C:\Users\Shadab\AndroidStudioProjects\EmPubLite\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-6b213030e2b9f37bf732229257522e72629cc8f3.jar
+C:\Users\Shadab\AndroidStudioProjects\EmPubLite\app\build\intermediates\pre-dexed\debug\gson-2.3.1-8555f79320eca91fa178b621de7b115a6d32cd44.jar
+C:\Users\Shadab\AndroidStudioProjects\EmPubLite\app\build\intermediates\pre-dexed\debug\classes-7d1057a39c242ffa1400ede46c1a8279f6418f60.jar
